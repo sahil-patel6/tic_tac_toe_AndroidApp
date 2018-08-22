@@ -1,1 +1,3 @@
 # tic_tac_toe_AndroidApp
+
+This is a beta release, You can kindly tell if there is a bug to me...

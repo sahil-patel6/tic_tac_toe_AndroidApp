@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/board1"
+                android:layout_width="80dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/board_button"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/board2"
+                android:layout_width="80dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/board_button"
+                android:padding="10dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/board3"
+                android:background="@drawable/board_button"
+                android:layout_width="80dp"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/board4"
+                android:background="@drawable/board_button"
+                android:layout_width="80dp"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/board5"
+                android:background="@drawable/board_button"
+                android:layout_width="80dp"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/board6"
+                android:background="@drawable/board_button"
+                android:layout_width="80dp"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/board7"
+                android:background="@drawable/board_button"
+                android:layout_width="80dp"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/board8"
+                android:layout_width="80dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/board_button"
+                android:padding="10dp"
+                android:text=""
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/board9"
+                android:background="@drawable/board_button"
+                android:layout_width="80dp"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:text="@string/X"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/restart"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/refresh_button"
+        android:text="@string/restart"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+</android.support.constraint.ConstraintLayout>

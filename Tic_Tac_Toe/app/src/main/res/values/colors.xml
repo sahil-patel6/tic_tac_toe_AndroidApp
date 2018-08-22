@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background">#1b1b1b</color>
+    <color name="backgroundForBoardButton">#292929</color>
+    <color name="play_again">#747474</color>
+    <color name="X">#54b8fe</color>
+    <color name="O">#ef6363</color>
+    <color name="refresh_icon">#454545</color>
+    <color name="refresh_button_background">#288bf6</color>
+</resources>
