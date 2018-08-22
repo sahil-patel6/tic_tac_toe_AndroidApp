@@ -1,10 +1,8 @@
 <resources>
     <string name="app_name">Tic Tac Toe</string>
-    <string name="X">Play For X:</string>
-    <string name="O">Play For O:</string>
+    <string name="X">Player 1:</string>
+    <string name="O">Player 2:</string>
     <string name="X_board">X</string>
     <string name="O_board">O</string>
     <string name="restart">Restart</string>
-    <string name="XWinner">X Player is a Winner</string>
-    <string name="OWinner">O Player is a Winner</string>
 </resources>

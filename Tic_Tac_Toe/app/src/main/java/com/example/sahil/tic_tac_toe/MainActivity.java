@@ -223,7 +223,7 @@ public class MainActivity extends AppCompatActivity {
             board.setText(R.string.X_board);
             board.setEnabled(false);
 
-        }else if (!stateForX && (board.getText().toString() != "X") && (board.getText().toString() != "O")){
+        }else if (!stateForX){
 
             board.setTextColor(this.getResources().getColor(R.color.O));
             board.setText(R.string.O_board);
@@ -234,7 +234,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void restart(){
-
         board1.setText("");
         board1.setEnabled(true);
         board2.setText("");
@@ -255,7 +254,6 @@ public class MainActivity extends AppCompatActivity {
         board9.setEnabled(true);
         text.setText(R.string.X);
         stateForX = true;
-
     }
 
     private void checkWinner(){
@@ -270,21 +268,11 @@ public class MainActivity extends AppCompatActivity {
         String boardEight = board8.getText().toString();
         String boardNine = board9.getText().toString();
 
-        String XWinner = "X Player is a Winner";
-        String OWinner = "O Player is a Winner";
-//
-//        Log.e("1",boardOne);
-//        Log.e("2",boardTwo);
-//        Log.e("3",boardThree);
-//        Log.e("4",boardFour);
-//        Log.e("5",boardFive);
-//        Log.e("6",boardSix);
-//        Log.e("7",boardSeven);
-//        Log.e("8",boardEight);
-//        Log.e("9",boardNine);
+        String XWinner = "Player 1 is a Winner";
+        String OWinner = "Player 2 is a Winner";
 
         if ((boardOne.equals("X")) && (boardTwo.equals("X")) && (boardThree.equals("X"))){
-            text.setText(R.string.XWinner);
+            text.setText(XWinner);
             disableButtons();
         }else if ((boardOne.equals("O")) && (boardTwo.equals("O")) && (boardThree.equals("O"))){
             text.setText(OWinner);
